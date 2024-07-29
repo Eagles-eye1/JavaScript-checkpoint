@@ -412,16 +412,31 @@ https://www.youtube.com/watch?v=Kn06785pkJg*/
 
 
 
-//  Initializing a gimli object
-const Powell = {
+// //  Initializing a Powell object
+// const Powell = {
+//     name: "Powell",
+//     race: "Negro",
+//     weapon: "axe and sword",
+//     greet: function() {
+//         return `Hi, my name is ${this.Powell}!`;
+//     },
+// };
+// console.log(Powell)
+// // prints {name:"Powell", race:"Negro", weapon:"axe and sword", greet:f greet {...}}
+// // PS: This output may render differently depending on what console you are using, 
+// //but you should notice that all of the values passed to the object are shown in the output.
+
+
+// Initializing a gimli object
+var Powell = {
     name: "Powell",
-    race: "Negro",
-    weapon: "axe and sword",
+    race: "dwarf",
+    weapon: "axe",
     greet: function() {
-        return `Hi, my name is ${Powell}!`;
+        return `Hi, my name is ${this.weapon}!`;
     },
 };
-console.log(Powell)
-// prints {name:"Powell", race:"Negro", weapon:"axe and sword", greet:f greet {...}}
-// PS: This output may render differently depending on what console you are using, 
-//but you should notice that all of the values passed to the object are shown in the output.
+
+//Calling an object method using the dot notation
+console.log(Powell.greet()); 
+// prints "Hi, my name is Gimli!"
