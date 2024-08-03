@@ -427,16 +427,74 @@ https://www.youtube.com/watch?v=Kn06785pkJg*/
 // //but you should notice that all of the values passed to the object are shown in the output.
 
 
-// Initializing a gimli object
-var Powell = {
-    name: "Powell",
-    race: "dwarf",
-    weapon: "axe",
-    greet: function() {
-        return `Hi, my name is ${this.weapon}!`;
-    },
-};
+// // Initializing a gimli object
+// var Powell = {
+//     name: "Powell",
+//     race: "dwarf",
+//     weapon: "axe",
+//     greet: function() {
+//         return `Hi, my name is ${this.weapon}!`;
+//     },
+// };
 
-//Calling an object method using the dot notation
-console.log(Powell.greet()); 
-// prints "Hi, my name is Gimli!"
+// //Calling an object method using the dot notation
+// console.log(Powell.greet()); 
+// // prints "Hi, my name is Gimli!"
+
+
+
+
+
+// // Initializing a gimli object
+// var gimli = {
+//     name: "Gimli",
+//     race: "dwarf",
+//     weapon: "axe",
+//     greet: function() {
+//         return `Hi, my name is ${this.name}!`;
+//     },
+// };
+
+// // Adding a new age property to gimli using the dot notation
+// gimli.age = 139;
+
+// // Adding new age property to gimli using the dot notation
+// gimli["age"] = 139;
+// // Adding a new fight method to gimli
+// gimli.fight = function() {
+//     return `Gimli attacks with an ${this.weapon}.`;
+// }
+
+// console.log(gimli)
+// // prints {name: "Gimli", race: "dwarf", weapon: "axe", age: 139, greet: ƒ, fight: ƒ}
+
+// // Calling the newly created method fight
+// console.log(gimli.fight());
+// // prints "Gimli attacks with an axe."
+
+
+
+// // Updating weapon from axe to battle axe
+// gimli.weapon = "epic battle axe";
+
+// // Calling the previously created method fight AGAIN
+// console.log(gimli.fight());
+// // prints "Gimli attacks with an epic battle axe."
+
+
+
+// //  Initializing a gimli object
+// const gimli = {
+//     name: "Gimli",
+//     race: "dwarf",
+//     weapon: "axe",
+//     greet: function() {
+//         return `Hi, my name is ${this.name}!`;
+//     },
+// };
+
+// // Removing weapon from gimli
+// delete gimli.weapon; // Output: true
+// // We can test the output of gimli to see if it succeeded.
+// console.log(gimli);
+// // prints {name: "Gimli", race: "dwarf", greet: ƒ }
